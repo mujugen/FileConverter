@@ -22,6 +22,7 @@ heic_files = [f for f in os.listdir(input_directory) if f.lower().endswith(".hei
 
 # Loop through HEIC files and convert them to PNG
 for heic_file in heic_files:
+    print("Converting ",heic_file)
     input_path = os.path.join(input_directory, heic_file)
     output_path = os.path.join(output_directory, os.path.splitext(heic_file)[0] + ".png")
     convert_heic_to_png(input_path, output_path)
