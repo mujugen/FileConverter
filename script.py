@@ -15,6 +15,7 @@ output_directory = "./output"
 
 # Create the output directory if it doesn't exist
 os.makedirs(output_directory, exist_ok=True)
+os.makedirs(input_directory, exist_ok=True)
 
 # List HEIC files in the input directory
 heic_files = [f for f in os.listdir(input_directory) if f.lower().endswith(".heic")]
